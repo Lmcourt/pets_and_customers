@@ -1,9 +1,6 @@
 class Customer
-  attr_reader :name,
-              :id,
-              :pets,
-              :outstanding_balance
 
+  attr_reader :name, :id, :pets, :outstanding_balance
   def initialize(name, id)
     @name = name
     @id = id
@@ -15,7 +12,7 @@ class Customer
     @pets << pet
   end
 
-  def charge(amount)
-    @outstanding_balance += amount
+  def charge(cost)
+    @outstanding_balance += cost
   end
 end
